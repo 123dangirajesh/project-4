@@ -1,0 +1,80 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 100%;
+	
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+}
+
+li{
+    font-size: 1em;
+    color: black;
+    transition: font-size  1s, color 1s;
+}
+
+
+
+
+.list-box {
+  position: absolute;
+  height: 85%;
+  top: 27px;
+  Right: 0px;
+  background: Grey;
+  padding: 10px 18px 17px;
+  text-align: left;
+  width: 300px;
+  opacity: 0.7;
+  overflow: scroll;
+}
+
+
+.title {
+  padding-bottom: 10px;
+}
+
+.search {
+  width : 100%;
+  padding: 9px 40px;
+  border-radius: 20px;
+}
+
+.list-item {
+  cursor: pointer;
+  line-height: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 767px) {
+  .list-box {
+    -webkit-transform: translate(-400px, 0);
+    transform: translate(-400px, 0);
+    transition: transform 0.3s ease;
+    width: 225px;
+  }
+
+  .list-box-open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+    
+  
